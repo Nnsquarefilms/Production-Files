@@ -77,6 +77,19 @@
     <div class="slideshow-container"></div>  
  </section>
 
+<!-- SCRIPT CONTAINER
+-->
+  <div class="Team_card">
+    <div class="teams_card">
+      
+      <div style="width: 100%; max-width: 600px; margin: 20px auto; border: 1px solid #ccc; padding: 10px;">
+          <h3>PDF Preview</h3>
+          <iframe id="pdfPreview" src="The Peaky Document.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="400px"></iframe>
+      </div>
+      <button id="downloadBtn" class="portbt"  > *Read Registered Script*</button>
+    </div>
+
+  
   <!-- Our Team Section -->
   <section>
     <h2>Our Team</h2>
@@ -207,7 +220,21 @@
       document.querySelector('.right').style.display = 'flex';
     }
   </script>
-  
+
+
+
+    <script>
+  document.getElementById("downloadBtn").addEventListener("click", function() {
+      // Create a temporary link
+      var link = document.createElement("a");
+      link.href = "The Peaky Document.pdf";  // Replace with the actual PDF file URL
+      link.download = "The Peaky Document.pdf";  // File name for downloading
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+  });
+
+</script>
  <!-- JavaScript -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
