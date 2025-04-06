@@ -27,7 +27,7 @@
   <nav>
     <ul class="sidebar"style="display:none";>
       <div class="logoandname" style="display: flex; flex-direction: row; width: auto; margin-top: 16px; margin-left: 5px;">
-        <img style="max-width:300px;max-height:200px"; src="GIf.gif">
+        
         <a style="margin-top: 15px;" onclick="closeSidebar()">
           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white">
             <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
@@ -35,10 +35,10 @@
         </a>
       </div>
       <a href="index.html">Home</a>
-      <a style="color:#8dfe00" href="Team.html">Team</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="contactus.html">Contact us</a>
+      <a href="Team.html">Team</a>
+      <a  style="color:#8dfe00" href="portfolio.html">Portfolio</a>
       <a href="carrers.html">Carrers</a>
+      <a href="WORKSOP.HTML">Workshop</a>
       <a href="aboutus.html">About</a>
     </ul>
     <div class="left">
@@ -48,16 +48,23 @@
         </svg>
       </a>
       <!--<img style="max-width:150px;max-height:150px"; src="Logo Nsquare 1.png">-->
-      <img class="nslogo" style="max-width:400px;max-height:250px"; src="LOGO ANIMATED.gif">
-    </div>
+   </div>
     <div class="right" id="nav-links">
       <a href="index.html">Home</a>
       <a  href="team.html">Team</a>
       <a  style="color: #6704f8;;" href="portfolio.html">Portfolio</a>
       <a href="carrers.html">Careers</a>
+      <a href="WORKSHOP.HTML">Workshop</a>
       <a href="About.html">About us</a>
     </div>
   </nav>
+
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="3129957-uhd_3840_2160_25fps.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  
+
 
 
  
@@ -70,18 +77,60 @@
         <section id="slideshow">
             <div class="slideshow-container"></div>  
         </section>
-        <div style="width: 100%; max-width: 600px; margin: 20px auto; border: 1px solid #ccc; padding: 10px;">
-            <h3>PDF Preview</h3>
-            <iframe id="pdfPreview" src="The Peaky Document.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="400px"></iframe>
-        </div>
-        <button id="downloadBtn" class="portbt" onclick="openlokeshPage()" > *Read Registered Script*</button>
-      </div>
+        <section >
+          <div class="iframe-container">
+          <iframe src="https://docs.google.com/gview?url=https://raw.githubusercontent.com/Nnsquarefilms/Production-Files/main/The%20Peaky%20Document.pdf&embedded=true" 
+          style="width:100%; height:fit-100vh;" frameborder="0">
+        </iframe>
+          </div>
+        </section>
 
 
 
 
 
   </section>
+
+  <!-- CAST SECTION -->
+<section>
+  <h2>peaky cast</h2>
+  <div class="card-container">
+   
+    <div class="card">
+      <img style="max-width:250px;max-height:250px" src="SAI KUMAR PEAKY.jpeg">
+      <p>SAI KUMAR</p>
+      <button onclick="openSaiPeakyPage()" >Learn More</button>
+    </div>
+    
+
+    <div class="card">
+      <img style="max-width:250px;max-height:250px" src="NAKSHATRA.png">
+      <p>AG. NAKSHATRA</p>
+      <button onclick="openNAKSHATRAPage()" >Learn More</button>
+    </div>
+    
+
+
+    <div class="card">
+      <img style="max-width:250px;max-height:250px" src="SAI.jpeg">
+      <p>SAI KUMAR</p>
+      <button onclick="openSAIPage()" >Learn More</button>
+    </div>
+
+
+    <div class="card">
+     
+      <img style="max-width:250px;max-height:250px" src="Ameer salaar.jpeg">
+      <p>AMEER SALAAR</p>
+      <button onclick="openAMEERSALAARPage()" >Learn More</button>
+    </div>
+    <div class="card">
+      
+      <img style="max-width:250px;max-height:250px" src="Diksshith.jpeg">
+      <p>DIKSHITH</p>
+      <button onclick="openDIKSHITHPage()" >Learn More</button>
+    </div>
+</section>
 
  <!-- Social Icons -->
   <div class="cont2" style="display: flex; justify-content: center; margin: 20px;">
