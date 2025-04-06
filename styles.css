@@ -1,7 +1,12 @@
 
+
 body{
-    background-color: black;
+  
+background-color: black;
+  
 }
+
+
 
 
 /* Cards */
@@ -103,4 +108,8 @@ body{
         font-size: 1rem;
         padding: 10px;
     }
+    #hertxt{
+      font-size: 1.5rem;
+    }
+
 }
